@@ -9,6 +9,16 @@ const handle = app.getRequestHandler();
 app.prepare()
     .then(()=> {
         const server = express();
+        
+        //typically with nextJS there is no need to write routes like that,
+        //because nextJS automatically creates the routes for files in /pages
+        server.get('/page2', (req, res) => {
+            return app.render(req, res, '/page2');
+        })
+
+        server.get('/page3', (req, res) => {
+            return app.render(req, res, '/amiright');
+        })
 
         server.get('*', (req, res) => {
             return handle(req, res);
