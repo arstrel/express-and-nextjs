@@ -18,7 +18,7 @@
   "homepage": "https://github.com/arstrel/express-and-nextjs#readme",
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "next": "^9.0.5",
     "react": "^16.9.0",
     "react-dom": "^16.9.0"
